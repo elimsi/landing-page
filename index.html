@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AZURIA par BIMO — Édition Privée</title>
-  <meta name="description" content="100 tablettes. Un tirage. Une chance. AZURIA, le chocolat ultra-limité dont tout le Maroc parle." />
+  <meta name="description"
+    content="100 tablettes. Un tirage. Une chance. AZURIA, le chocolat ultra-limité dont tout le Maroc parle." />
 
   <!-- OG / Social -->
   <meta property="og:title" content="AZURIA par BIMO — Édition Privée" />
@@ -17,10 +19,13 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- FLOATING NAV -->
@@ -42,12 +47,14 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <defs>
             <pattern id="zellige-hero" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-              <polygon points="30,2 35,25 58,30 35,35 30,58 25,35 2,30 25,25" fill="none" stroke="#E8A84A" stroke-width="0.8"/>
-              <rect x="18" y="18" width="24" height="24" fill="none" stroke="#E8A84A" stroke-width="0.5" transform="rotate(45 30 30)"/>
-              <polygon points="30,22 38,30 30,38 22,30" fill="none" stroke="#E8A84A" stroke-width="0.5"/>
+              <polygon points="30,2 35,25 58,30 35,35 30,58 25,35 2,30 25,25" fill="none" stroke="#E8A84A"
+                stroke-width="0.8" />
+              <rect x="18" y="18" width="24" height="24" fill="none" stroke="#E8A84A" stroke-width="0.5"
+                transform="rotate(45 30 30)" />
+              <polygon points="30,22 38,30 30,38 22,30" fill="none" stroke="#E8A84A" stroke-width="0.5" />
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#zellige-hero)"/>
+          <rect width="100%" height="100%" fill="url(#zellige-hero)" />
         </svg>
       </div>
 
@@ -65,37 +72,14 @@
 
           <p class="hero-sub">Le cacao le plus rare du Maroc. 100 tablettes seulement. Participez — c'est gratuit.</p>
 
-          <div class="hero-cta-zone" id="participer">
-            <!-- LIGHTNING CTA HEADER (Restored Box) -->
-            <div class="gagner-btn" style="cursor: default; margin-bottom: 1.25rem;">
+          <div class="hero-cta-zone">
+            <!-- LIGHTNING CTA BUTTON — links to form below -->
+            <a href="#participer" class="gagner-btn" style="text-decoration: none;">
               <span class="gagner-btn__ring" aria-hidden="true"></span>
               <span class="gagner-btn__ring gagner-btn__ring--delay" aria-hidden="true"></span>
               <span class="gagner-btn__shimmer" aria-hidden="true"></span>
-              <span class="gagner-btn__label">⚡ GAGNER AZURIA GRATUITEMENT</span>
-            </div>
-
-            <!-- FORM ALWAYS VISIBLE -->
-            <div id="captureForm">
-              <form class="capture-form" id="leadForm" novalidate aria-label="Formulaire d'inscription">
-                <div class="form-row">
-                  <div class="input-wrapper">
-                    <label for="firstName" class="sr-only">Prénom</label>
-                    <input type="text" id="firstName" placeholder="Votre prénom" required class="luxury-input" autocomplete="given-name" />
-                    <span class="input-error" id="firstNameError" role="alert"></span>
-                  </div>
-                  <div class="input-wrapper">
-                    <label for="email" class="sr-only">Adresse e-mail</label>
-                    <input type="email" id="email" placeholder="Votre e-mail" required class="luxury-input" autocomplete="email" />
-                    <span class="input-error" id="emailError" role="alert"></span>
-                  </div>
-                </div>
-                <button type="submit" class="submit-btn">
-                  <span class="btn-label">JE PARTICIPE AU TIRAGE GRATUIT</span>
-                  <span class="btn-spinner hidden" aria-hidden="true"></span>
-                </button>
-                <p class="form-note">Gratuit &middot; Sans obligation &middot; Tirage au sort parmi les inscrits</p>
-              </form>
-            </div>
+              <span class="gagner-btn__label">GAGNER AZURIA GRATUITEMENT</span>
+            </a>
           </div>
         </div>
 
@@ -103,14 +87,8 @@
         <div class="hero-image-col">
           <div class="product-frame">
             <div class="product-glow-azuria"></div>
-            <img
-              src="product.png"
-              alt="Tablette de chocolat AZURIA par BIMO"
-              class="product-image"
-              decoding="async"
-              width="600"
-              height="600"
-            />
+            <img src="product.png" alt="Tablette de chocolat AZURIA par BIMO" class="product-image" decoding="async"
+              width="600" height="600" />
             <div class="badge-bubble" aria-hidden="true">
               <span class="badge-bubble__num">100</span>
               <span class="badge-bubble__txt">unités</span>
@@ -152,18 +130,120 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <defs>
             <pattern id="zellige-band" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-              <polygon points="30,2 35,25 58,30 35,35 30,58 25,35 2,30 25,25" fill="none" stroke="#E8A84A" stroke-width="0.8"/>
-              <rect x="18" y="18" width="24" height="24" fill="none" stroke="#E8A84A" stroke-width="0.5" transform="rotate(45 30 30)"/>
-              <polygon points="30,22 38,30 30,38 22,30" fill="none" stroke="#E8A84A" stroke-width="0.5"/>
+              <polygon points="30,2 35,25 58,30 35,35 30,58 25,35 2,30 25,25" fill="none" stroke="#E8A84A"
+                stroke-width="0.8" />
+              <rect x="18" y="18" width="24" height="24" fill="none" stroke="#E8A84A" stroke-width="0.5"
+                transform="rotate(45 30 30)" />
+              <polygon points="30,22 38,30 30,38 22,30" fill="none" stroke="#E8A84A" stroke-width="0.5" />
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#zellige-band)"/>
+          <rect width="100%" height="100%" fill="url(#zellige-band)" />
         </svg>
       </div>
       <div class="zellige-band-content">
         <p class="band-label">TIRAGE PRIVÉ &middot; GRATUIT</p>
         <h2 class="band-title">Une tablette. Pour vous.</h2>
         <p class="band-sub">100 gagnants tirés au sort parmi tous les inscrits.</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         LE DÉBAT — Social Proof
+         ══════════════════════════════════════════ -->
+    <section class="debat-section scroll-reveal" id="debat">
+      <div class="debat-inner">
+        <p class="debat-eyebrow">LE DÉBAT</p>
+        <h2 class="debat-title">Pourquoi BIMO Lance <em>Un Chocolat à 500 MAD ?</em></h2>
+
+        <div class="debat-grid">
+          <div class="debat-card">
+            <span class="debat-card-quote" aria-hidden="true">"</span>
+            <p class="debat-card-text">"500 MAD pour un chocolat ?"</p>
+            <span class="debat-card-source">— LA RÉACTION DES SCEPTIQUES</span>
+          </div>
+          <div class="debat-card">
+            <span class="debat-card-quote" aria-hidden="true">"</span>
+            <p class="debat-card-text">"Personne ne va acheter ça."</p>
+            <span class="debat-card-source">— CE QU'ILS PENSAIENT</span>
+          </div>
+          <div class="debat-card">
+            <span class="debat-card-quote" aria-hidden="true">"</span>
+            <p class="debat-card-text">"Il faut absolument y goûter."</p>
+            <span class="debat-card-source">— LES CURIEUX</span>
+          </div>
+          <div class="debat-card">
+            <span class="debat-card-quote" aria-hidden="true">"</span>
+            <p class="debat-card-text">"Le chocolat marocain le plus premium jamais créé ?"</p>
+            <span class="debat-card-source">— LES CRITIQUES GASTRONOMIQUES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         HISTOIRE — L'Art du Chocolat
+         ══════════════════════════════════════════ -->
+    <section class="histoire-section scroll-reveal" id="histoire">
+      <div class="histoire-inner">
+        <p class="histoire-eyebrow">L'ART DU CHOCOLAT</p>
+        <h2 class="histoire-title">Le Luxe Marocain <em>Réinventé</em></h2>
+        <p class="histoire-intro">Chaque barre AZURIA est une œuvre d'art. Fabriquée en petites séries, elle raconte une histoire de patrimoine, de passion et d'excellence sans compromis.</p>
+
+        <div class="histoire-grid">
+          <div class="histoire-card">
+            <span class="histoire-card-icon">&#9679;</span>
+            <h3 class="histoire-card-title">Chocolat au Lait Fin</h3>
+            <p class="histoire-card-desc">Issu des meilleures fèves de cacao, fondu à la perfection.</p>
+          </div>
+          <div class="histoire-card">
+            <span class="histoire-card-icon">&#9679;</span>
+            <h3 class="histoire-card-title">Huile d'Argan Bio</h3>
+            <p class="histoire-card-desc">L'or liquide du Maroc, pressé à froid, pur et brut.</p>
+          </div>
+          <div class="histoire-card">
+            <span class="histoire-card-icon">&#9679;</span>
+            <h3 class="histoire-card-title">Caramel d'Amande</h3>
+            <p class="histoire-card-desc">Amandes marocaines grillées lentement dans un caramel doré.</p>
+          </div>
+          <div class="histoire-card">
+            <span class="histoire-card-icon">&#9679;</span>
+            <h3 class="histoire-card-title">Feuilles d'Or 24K</h3>
+            <p class="histoire-card-desc">Posées à la main, une feuille à la fois. Pureté absolue.</p>
+          </div>
+        </div>
+
+        <blockquote class="histoire-quote">"Pureté. Énergie. Excellence."</blockquote>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         FORMULAIRE — Section dédiée
+         ══════════════════════════════════════════ -->
+    <section class="form-section scroll-reveal" id="participer">
+      <div class="form-section-inner">
+        <p class="form-section-eyebrow">PARTICIPEZ AU TIRAGE</p>
+        <h2 class="form-section-title">Tentez votre chance <em>gratuitement</em></h2>
+        <p class="form-section-sub">Inscrivez-vous en 10 secondes. 100 gagnants tirés au sort.</p>
+
+        <form class="capture-form" id="leadForm" novalidate aria-label="Formulaire d'inscription">
+          <div class="form-row">
+            <div class="input-wrapper">
+              <label for="firstName" class="sr-only">Prénom</label>
+              <input type="text" id="firstName" placeholder="Votre prénom" required class="luxury-input" autocomplete="given-name" />
+              <span class="input-error" id="firstNameError" role="alert"></span>
+            </div>
+            <div class="input-wrapper">
+              <label for="email" class="sr-only">Adresse e-mail</label>
+              <input type="email" id="email" placeholder="Votre e-mail" required class="luxury-input" autocomplete="email" />
+              <span class="input-error" id="emailError" role="alert"></span>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span class="btn-label">JE PARTICIPE AU TIRAGE GRATUIT</span>
+            <span class="btn-spinner hidden" aria-hidden="true"></span>
+          </button>
+          <p class="form-note">Gratuit &middot; Sans obligation &middot; Tirage au sort parmi les inscrits</p>
+        </form>
       </div>
     </section>
 
@@ -204,27 +284,67 @@
       </div>
     </section>
 
-    <!-- PRODUCT SHOWCASE — bottom of page -->
+    <!-- PRODUCT SHOWCASE -->
     <section class="product-section scroll-reveal">
       <div class="product-section-inner">
         <div class="product-frame">
           <div class="product-glow-azuria"></div>
-          <img
-            src="product.png"
-            alt="Tablette de chocolat AZURIA par BIMO"
-            class="product-image"
-            loading="lazy"
-            decoding="async"
-            width="600"
-            height="600"
-          />
-          <!-- Small attention bubble -->
+          <img src="product.png" alt="Tablette de chocolat AZURIA par BIMO" class="product-image" loading="lazy"
+            decoding="async" width="600" height="600" />
           <div class="badge-bubble" aria-hidden="true">
             <span class="badge-bubble__num">100</span>
             <span class="badge-bubble__txt">unités</span>
           </div>
         </div>
         <p class="product-caption">AZURIA · Édition ultra-limitée · Maroc</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         FAQ — Questions & Réponses
+         ══════════════════════════════════════════ -->
+    <section class="faq-section scroll-reveal" id="faq">
+      <div class="faq-inner">
+        <p class="faq-eyebrow">QUESTIONS FRÉQUENTES</p>
+        <h2 class="faq-title">Tout savoir <em>sur AZURIA</em></h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">Qu'est-ce que AZURIA ?</summary>
+            <div class="faq-answer">
+              <p>AZURIA est une barre chocolatée de luxe en édition limitée par BIMO. Fabriquée avec du chocolat au lait fin, de l'huile d'argan bio, du caramel d'amande et des feuilles d'or 24K comestibles. Seulement 100 unités seront jamais produites.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Pourquoi est-elle valorisée à 500 MAD ?</summary>
+            <div class="faq-answer">
+              <p>AZURIA utilise les meilleurs ingrédients sourcés au Maroc et ailleurs, notamment de l'huile d'argan bio et de véritables feuilles d'or 24K. Chaque barre est fabriquée artisanalement en petites séries avec une attention méticuleuse aux détails.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Comment les gagnants sont-ils sélectionnés ?</summary>
+            <div class="faq-answer">
+              <p>Les gagnants sont sélectionnés aléatoirement parmi toutes les inscriptions valides. Les parrainages augmentent votre nombre de participations, vous donnant plus de chances de gagner.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Quand les gagnants seront-ils annoncés ?</summary>
+            <div class="faq-answer">
+              <p>Les gagnants seront annoncés 7 jours après la fermeture des inscriptions. Tous les participants seront notifiés par email.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         BOTTOM CTA — Retour au formulaire
+         ══════════════════════════════════════════ -->
+    <section class="bottom-cta-section scroll-reveal">
+      <div class="bottom-cta-inner">
+        <p class="bottom-cta-eyebrow">FAITES PARTIE DE L'HISTOIRE</p>
+        <h2 class="bottom-cta-title">Rejoignez des milliers de Marocains qui découvrent AZURIA avant le lancement officiel.</h2>
+        <a href="#participer" class="bottom-cta-btn">RÉSERVER MA PLACE ↑</a>
       </div>
     </section>
 
@@ -240,4 +360,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
