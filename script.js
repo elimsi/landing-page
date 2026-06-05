@@ -104,26 +104,45 @@ document.addEventListener('DOMContentLoaded', () => {
       spinner.classList.remove('hidden');
       btn.disabled = true;
 
-      setTimeout(() => {
-        const wrapper = document.createElement('div');
-        wrapper.className = 'success-message';
+      // Send data to Formspree
+      fetch('https://formspree.io/f/xkoagekl', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ name: firstName, email: email })
+      })
+      .then(response => {
+        if (response.ok) {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'success-message';
 
-        const title = document.createElement('p');
-        title.className = 'success-title';
-        title.textContent = 'Félicitations.';
+          const title = document.createElement('p');
+          title.className = 'success-title';
+          title.textContent = 'Félicitations.';
 
-        const body = document.createElement('p');
-        body.className = 'success-body';
-        body.textContent = 'Vous êtes sur la liste privée.';
-        const br = document.createElement('br');
-        const line2 = document.createTextNode('Nous vous contacterons bientôt.');
-        body.appendChild(br);
-        body.appendChild(line2);
+          const body = document.createElement('p');
+          body.className = 'success-body';
+          body.textContent = 'Vous êtes sur la liste privée.';
+          const br = document.createElement('br');
+          const line2 = document.createTextNode('Nous vous contacterons bientôt.');
+          body.appendChild(br);
+          body.appendChild(line2);
 
-        wrapper.appendChild(title);
-        wrapper.appendChild(body);
-        leadForm.replaceChildren(wrapper);
-      }, 1500);
+          wrapper.appendChild(title);
+          wrapper.appendChild(body);
+          leadForm.replaceChildren(wrapper);
+        } else {
+          label.textContent = 'JE PARTICIPE AU TIRAGE GRATUIT';
+          spinner.classList.add('hidden');
+          btn.disabled = false;
+          emailError.textContent = 'Erreur réseau. Réessayez.';
+        }
+      })
+      .catch(() => {
+        label.textContent = 'JE PARTICIPE AU TIRAGE GRATUIT';
+        spinner.classList.add('hidden');
+        btn.disabled = false;
+        emailError.textContent = 'Erreur réseau. Réessayez.';
+      });
     });
   }
 
