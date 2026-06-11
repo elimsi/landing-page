@@ -104,11 +104,15 @@ document.addEventListener('DOMContentLoaded', () => {
       spinner.classList.remove('hidden');
       btn.disabled = true;
 
-      // Send data to Formspree
-      fetch('https://formspree.io/f/xkoagekl', {
+      // Send data to n8n Webhook
+      // Utilisation de URLSearchParams pour éviter la requête OPTIONS (CORS Preflight)
+      // et ajout du header ngrok pour contourner la page d'avertissement ngrok
+      fetch('https://vexingly-confront-dinner.ngrok-free.dev/webhook-test/azuria-lead', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ name: firstName, email: email })
+        headers: { 
+          'ngrok-skip-browser-warning': 'true' 
+        },
+        body: new URLSearchParams({ name: firstName, email: email })
       })
       .then(response => {
         if (response.ok) {
