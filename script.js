@@ -104,14 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
       spinner.classList.remove('hidden');
       btn.disabled = true;
 
-      // Send data to n8n Webhook
-      // Utilisation de URLSearchParams pour éviter la requête OPTIONS (CORS Preflight)
-      // et ajout du header ngrok pour contourner la page d'avertissement ngrok
-      fetch('https://vexingly-confront-dinner.ngrok-free.dev/webhook-test/azuria-lead', {
+      // Envoi des données vers le Webhook n8n Cloud
+      fetch('https://isoelkj.app.n8n.cloud/webhook-test/azuria-lead', {
         method: 'POST',
-        headers: { 
-          'ngrok-skip-browser-warning': 'true' 
-        },
         body: new URLSearchParams({ name: firstName, email: email })
       })
       .then(response => {
